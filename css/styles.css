@@ -1,11 +1,25 @@
+:root {
+  --primary-text-color: #212121;
+  --hero--text-color: white;
+  --text-color: #757575;
+  --accent-color: #2196f3;
+  --info--footer-color: rgba(255, 255, 255, 0.6);
+  --footer-color-fon: #2f303a;
+  --section-color: #afb1b8;
+  --blok-title: rgba(47, 48, 58, 0.8);
+  --button-color: rgb(73, 180, 247);
+  --pic-feature-wrap-color: #f5f4fa;
+  --developers-text-footer: rgba(255, 255, 255, 0.4);
+}
+
 .body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .web-studio {
@@ -15,11 +29,11 @@
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .studio {
-  color: black;
+  color: var(--primary-text-color);
 }
 
 /*Header styles*/
@@ -41,7 +55,7 @@
 }
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .link-contacts {
@@ -51,12 +65,12 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .link-contacts:hover,
 .link-contacts:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .blok-title {
@@ -64,7 +78,7 @@
   height: 600px;
   left: 0px;
   top: 80px;
-  background: rgba(47, 48, 58, 0.8);
+  background: var(--blok-title);
 }
 
 .hero-title {
@@ -75,7 +89,7 @@
   line-height: 60px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: white;
+  color: var(--hero--text-color);
 }
 
 .button-primary {
@@ -88,8 +102,8 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  background-color: #2196f3;
-  color: white;
+  background-color: var(--accent-color);
+  color: var(--hero--text-color);
   display: inline-block;
   padding: 10px;
   border-radius: 4px;
@@ -98,7 +112,7 @@
 
 .button-primary:hover,
 .button-primary:focus {
-  background-color: rgb(73, 180, 247);
+  background-color: var(--button-color);
 }
 
 ul {
@@ -112,11 +126,11 @@ a {
 .pic-feature-wrap {
   width: 270px;
   height: 120px;
-  background: #f5f4fa;
+  background: var(--pic-feature-wrap-color);
   border-radius: 4px;
 }
 
-.main-title {
+.title-feature {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -124,7 +138,7 @@ a {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .text {
@@ -134,7 +148,7 @@ a {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .section-title {
@@ -144,7 +158,7 @@ a {
   font-size: 36px;
   line-height: 42px;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var var(--primary-text-color);
 }
 
 .section-text {
@@ -155,12 +169,12 @@ a {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: white;
+  color: var(--hero--text-color);
   text-align: center;
   line-height: center;
   width: 370px;
   height: 70px;
-  background: rgba(47, 48, 58, 0.8);
+  background: var(--blok-title);
   border-radius: 0px 0px 4px 4px;
 }
 .name {
@@ -170,7 +184,7 @@ a {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .profession {
@@ -180,7 +194,7 @@ a {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .logo-web {
@@ -190,7 +204,7 @@ a {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo-studio {
@@ -200,7 +214,7 @@ a {
   font-size: 22px;
   line-height: 26px;
   letter-spacing: 0.03em;
-  color: white;
+  color: var(--hero--text-color);
 }
 
 .address {
@@ -210,7 +224,7 @@ a {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--hero--text-color);
 }
 .info {
   font-family: Roboto;
@@ -219,7 +233,7 @@ a {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--info--footer-color);
 }
 .appeals {
   font-family: Roboto;
@@ -229,7 +243,7 @@ a {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: white;
+  color: var(--hero--text-color);
 }
 .mail-input {
   font-family: Roboto;
@@ -240,10 +254,10 @@ a {
   display: flex;
   align-items: center;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--info--footer-color);
 }
 
-.developed {
+.developers {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -251,7 +265,7 @@ a {
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--developers-text-footer);
 }
 
 /*Portfolio*/
@@ -264,16 +278,16 @@ a {
   line-height: 26px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  border: none;
-  background: #f5f4fa;
+  color: var(--primary-text-color);
+  background-color: var(--pic-feature-wrap-color);
   border-radius: 4px;
+  border: none;
 }
 
-.filters:hover,
-.filters:focus {
-  background-color: #2196f3;
-  color: white;
+.filters-button:hover,
+.filters-button:focus {
+  background-color: var(--accent-color);
+  color: var(--hero--text-color);
 }
 
 .projects-title {
@@ -283,7 +297,7 @@ a {
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .projects-text {
@@ -293,7 +307,7 @@ a {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 
 .projects-description {
@@ -303,11 +317,11 @@ a {
   font-size: 18px;
   line-height: 28px;
   letter-spacing: 0.03em;
-  color: gray;
+  color: var(--text-color);
 }
 
 .footer {
-  background: #2f303a;
+  background: var(--footer-color-fon);
   position: absolute;
   width: 1600px;
   height: 253px;
